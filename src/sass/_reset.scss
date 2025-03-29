@@ -1,0 +1,53 @@
+@import "variable.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: [Nunito Sans];
+  font-size: 16px;
+}
+body {
+  background: $primary-color;
+  color: $text-color;
+  padding-bottom: 50px;
+}
+.dark-theme {
+  background-color: hsl(0, 0%, 98%);
+  color: $primary-color;
+}
+
+.dark-theme .header {
+  background-color: $text-color;
+  color: $primary-color;
+}
+
+.dark-theme input,
+.dark-theme select {
+  background-color: hsl(0, 0%, 98%);
+  color: $primary-color;
+  border: 2px solid $text-color;
+}
+.dark-theme form {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.dark-theme select option {
+  background-color: hsl(0, 0%, 98%);
+  color: $primary-color;
+}
+.dark-theme .theme-button {
+  color: $primary-color;
+  border: 2px solid $text-color;
+  background-color: hsl(0, 0%, 98%);
+}
+.dark-theme .country-box {
+  color: $primary-color;
+  border: 2px solid $text-color;
+  background-color: hsl(0, 0%, 98%);
+}
+// .dark-theme .search-box {
+//   border: 2px solid $text-color;
+// }
+.dark-theme .search-box input {
+  border: 2px solid $text-color !important;
+}

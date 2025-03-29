@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $secondary-color;
+  padding: 15px 50px;
+  font-size: 22px;
+  font-weight: map-get($map: $font-weights, $key: bold);
+
+  .headerbtn {
+    background-color: $secondary-color;
+    cursor: pointer;
+    padding: 5px;
+    color: $text-color;
+  }
+}

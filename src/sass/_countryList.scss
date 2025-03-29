@@ -1,0 +1,58 @@
+.details {
+  padding: 10px 50px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.country-box {
+  background-color: $secondary-color;
+  color: white;
+  width: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  padding-bottom: 20px;
+}
+
+.country-box img {
+  max-width: 100%;
+  height: 150px;
+}
+.country-box p {
+  padding-left: 20px;
+}
+
+.text {
+  margin-top: 20px;
+  padding: 20px;
+}
+.populationtext {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+span {
+  font-weight: map-get($map: $font-weights, $key: bold);
+}
+.text1 {
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .country-box {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .country-box {
+    width: 100%;
+  }
+}
