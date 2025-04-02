@@ -1,0 +1,48 @@
+.btn2 {
+  padding: 5px 30px;
+  margin-left: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.detail {
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 40px;
+  margin-left: 50px;
+  padding-right: 60px;
+}
+.detail-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.details-wrapper {
+  display: flex;
+  gap: 150px;
+}
+.details-wrapper p {
+  margin-top: 12px;
+}
+
+.name {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.border {
+  margin-top: 50px;
+  display: flex;
+  gap: 8px;
+}
+.border button {
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.country-flag {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}

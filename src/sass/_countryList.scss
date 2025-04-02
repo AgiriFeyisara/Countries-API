@@ -20,6 +20,7 @@
   flex-direction: column;
   border-radius: 3px;
   padding-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .country-box img {
@@ -33,7 +34,19 @@
 .text {
   margin-top: 20px;
   padding: 20px;
+  cursor: pointer;
 }
+.text a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+.text a:hover {
+  color: red;
+  text-decoration: underline;
+  transition: 5ms ease-in-out;
+}
+
 .populationtext {
   margin-top: 10px;
   padding-left: 20px;

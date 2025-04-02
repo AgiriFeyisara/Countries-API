@@ -15,7 +15,6 @@ form input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // width: 100%;
 
   .search-box {
     display: flex;
@@ -23,9 +22,9 @@ form input {
     border: 1px solid $secondary-color;
     border-radius: 5px;
     width: 30%;
-    // background: $secondary-color;
     padding: 5px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     .search-button {
       background: transparent;
@@ -37,6 +36,11 @@ form input {
       justify-content: center;
 
       i {
+        // color: white;
+        transition: transform 0.3s ease, red 0.3s ease;
+      }
+      i:hover {
+        transform: scale(1.1);
         color: white;
       }
     }

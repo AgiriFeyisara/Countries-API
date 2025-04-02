@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function CountryList({ countries, isLoading, error }) {
   if (error) return <div className="failure">Failed to load data</div>;
   if (isLoading) return <div className="loading">Loading, please wait...</div>;
@@ -13,7 +14,11 @@ function CountryList({ countries, isLoading, error }) {
               src={country.flags?.png}
               alt={`flag of ${country.name?.common}`}
             />
-            <h2 className="text">{country.name?.common}</h2>
+            <h2 className="text">
+              <Link to={`/country/${country.cca3}`}>
+                {country.name?.common}
+              </Link>
+            </h2>
             <p className="text1">
               <span>Capital</span>:{" "}
               {country.capital ? country.capital[0] : "N/A"}

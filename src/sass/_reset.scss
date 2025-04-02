@@ -51,3 +51,23 @@ body {
 .dark-theme .search-box input {
   border: 2px solid $text-color !important;
 }
+.dark-theme .detail {
+  color: $primary-color;
+}
+.dark-theme .text a {
+  color: $primary-color;
+}
+.dark-theme form input::placeholder {
+  color: $primary-color;
+}
+.dark-theme .search-container {
+  color: $primary-color;
+  border: none;
+  outline: none;
+}
+.dark-theme .search-container form i {
+  color: $primary-color;
+}
+.dark-theme i {
+  color: $primary-color;
+}

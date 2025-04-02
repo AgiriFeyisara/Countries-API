@@ -6,6 +6,7 @@
   padding: 15px 50px;
   font-size: 22px;
   font-weight: map-get($map: $font-weights, $key: bold);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   .headerbtn {
     background-color: $secondary-color;

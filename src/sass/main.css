@@ -54,6 +54,36 @@ body {
   border: 2px solid hsl(0, 0%, 100%) !important;
 }
 
+.dark-theme .detail {
+  color: hsl(207, 26%, 17%);
+}
+
+.dark-theme .text a {
+  color: hsl(207, 26%, 17%);
+}
+
+.dark-theme form input::-moz-placeholder {
+  color: hsl(207, 26%, 17%);
+}
+
+.dark-theme form input::placeholder {
+  color: hsl(207, 26%, 17%);
+}
+
+.dark-theme .search-container {
+  color: hsl(207, 26%, 17%);
+  border: none;
+  outline: none;
+}
+
+.dark-theme .search-container form i {
+  color: hsl(207, 26%, 17%);
+}
+
+.dark-theme i {
+  color: hsl(207, 26%, 17%);
+}
+
 .inputSection {
   padding: 15px 50px;
   color: #333;
@@ -82,6 +112,7 @@ form input {
   width: 30%;
   padding: 5px;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .search-container .search-box .search-button {
   background: transparent;
@@ -93,6 +124,10 @@ form input {
   justify-content: center;
 }
 .search-container .search-box .search-button i {
+  transition: transform 0.3s ease, red 0.3s ease;
+}
+.search-container .search-box .search-button i:hover {
+  transform: scale(1.1);
   color: white;
 }
 
@@ -135,6 +170,7 @@ form input {
   padding: 15px 50px;
   font-size: 22px;
   font-weight: 800;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .header .headerbtn {
   background-color: hsl(209, 23%, 22%);
@@ -166,6 +202,7 @@ form input {
   flex-direction: column;
   border-radius: 3px;
   padding-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .country-box img {
@@ -180,6 +217,18 @@ form input {
 .text {
   margin-top: 20px;
   padding: 20px;
+  cursor: pointer;
+}
+
+.text a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.text a:hover {
+  color: red;
+  text-decoration: underline;
+  transition: 5ms ease-in-out;
 }
 
 .populationtext {
@@ -216,4 +265,61 @@ span {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+}
+
+.btn2 {
+  padding: 5px 30px;
+  margin-left: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.detail {
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 40px;
+  margin-left: 50px;
+  padding-right: 60px;
+}
+
+.detail-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.details-wrapper {
+  display: flex;
+  gap: 150px;
+}
+
+.details-wrapper p {
+  margin-top: 12px;
+}
+
+.name {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.border {
+  margin-top: 50px;
+  display: flex;
+  gap: 8px;
+}
+
+.border button {
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.country-flag {
+  width: 400px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=main.css.map */
