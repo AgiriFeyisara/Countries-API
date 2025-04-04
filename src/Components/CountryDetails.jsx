@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Header from "../Components/Header";
 
 function CountryDetails() {
-  const { cca3 } = useParams(); // Get country code from URL
+  const { cca3 } = useParams();
   const [country, setCountry] = useState(null);
   const [borderCountries, setBorderCountries] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -26,7 +26,6 @@ function CountryDetails() {
         const countryData = data[0];
         setCountry(countryData);
 
-        // Fetch Border Countries
         if (countryData.borders && countryData.borders.length > 0) {
           const borderResponse = await fetch(
             `https://restcountries.com/v3.1/alpha?codes=${countryData.borders.join(
@@ -41,7 +40,7 @@ function CountryDetails() {
             }))
           );
         } else {
-          setBorderCountries([]); // No border countries
+          setBorderCountries([]);
         }
       } catch (err) {
         setError(err.message);
@@ -117,7 +116,6 @@ function CountryDetails() {
             </div>
           </div>
 
-          {/* Border Countries */}
           <div className="border">
             <h1>Border Countries: </h1>
             {borderCountries.length > 0 ? (
